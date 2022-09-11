@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor de moedas - ID3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="page-title">
+    Conversor de moedas
+  </h1>
+  <p class="page-subtitle">
+    Coloque o valor em dólar US$ e descruba em outras moedas!
+  </p>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+  <label for="moeda">Insira o valor</label><br>
+  <input type="number" id="valor" size="2" /><br>
+  <div>
+    <p class="radio">Agora escolha para qual moeda você deseja converter:</p>
+    <input type="radio" value="Real" name="escolhaMoeda" size="2" />
+    <label for="Real">Real</label>
+    <input type="radio" value="Euro" name="escolhaMoeda" size="2" />
+    <label for="Euro">Euro</label>
+    <input type="radio" value="Iene" name="escolhaMoeda" size="2" />
+    <label for="Iene">Iene</label>
+    <input type="radio" value="Bitcoin" name="escolhaMoeda" size="2" />
+    <label for="Bitcoin">Bitcoin</label>
+  </div>
+  <button type="submit" onclick="Converter()">Converter</button>
+  <h2 id="valorConvertido"></h2>
+</div>
+<a href="https://alura.com.br/" target="_blank">
+  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
